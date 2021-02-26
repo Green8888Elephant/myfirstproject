@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Hyper - Responsive Bootstrap 4 Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
+    <meta content="Coderthemes" name="author"/>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"/>
+
+<!--    <style>-->
+<!--        .gfg {-->
+<!--            width:auto;-->
+<!--            text-align:center;-->
+<!--            padding:20px;-->
+<!--        }-->
+<!--        img {-->
+<!--            max-width:100%;-->
+<!--            height:auto;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+
+<body>
+<!-- Begin page -->
+<!-- END wrapper -->
+<div class="wrapper">
+    <div class="left-side-menu">
+
+        <div class="slimscroll-menu">
+
+            <!-- LOGO -->
+            <a href="publPage.html" class="logo text-center">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo.png" alt="" height="16">
+                        </span>
+                <span class="logo-sm">
+                            <img src="assets/images/logo_sm.png" alt="" height="16">
+                        </span>
+            </a>
+
+            <!--- Sidemenu -->
+            <ul class="metismenu side-nav">
+
+                <li class="side-nav-title side-nav-item">Navigation</li>
+
+                <li class="side-nav-item">
+                    <a href="publPage.html" class="side-nav-link">
+                        <i class="dripicons-list"></i>
+                        <span> Publishment </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a href="advertPage.html" class="side-nav-link">
+                        <i class="dripicons-browser"></i>
+                        <span> Advertisment </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a href="commentPage.html" class="side-nav-link">
+                        <i class="dripicons-document"></i>
+                        <span> Comment </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a href="pushPage.html" class="side-nav-link">
+                        <i class="dripicons-copy"></i>
+                        <span> Push </span>
+                    </a>
+                </li>
+
+
+            </ul>
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- Sidebar -left -->
+
+    </div>
+    <div class="content-page">
+
+    <div class="content">
+
+        <!-- Topbar Start -->
+
+        <!-- end Topbar -->
+
+        <!-- Start Content-->
+        <div class="container-fluid">
+
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box">
+
+                        <h4 class="page-title">Advertisement</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h4 class="header-title">Make an advertisement</h4>
+
+                            <div class="table-responsive-sm">
+                                <table class="table table-centered mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th>Description</th>  <!-- Was Name, Phone Number, Date of Birth, Active? -->
+                                        <th>Image</th>
+                                        <th>Moderate</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tbody">
+                                    </tbody>
+                                </table>
+                            </div> <!-- end table-responsive-->
+
+                        </div> <!-- end card body-->
+                    </div> <!-- end card -->
+                </div><!-- end col-->
+
+                <!-- end col-->
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onclose="closeModal()">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <h6 id="name_of_creator">Creator</h6>
+
+                <hr>
+                <h6>Photos</h6>
+                <div id="photo">
+                </div>
+
+
+
+                <div id="sport">
+                </div>
+
+                <div id="sportCategory">
+                </div>
+
+                <div id="price">
+                </div>
+
+                <p id="description">Description</p>
+
+                <div id="title">
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button id ="btn-success" type="button" class="btn btn-success">Подтвердить</button>
+                <button id ="btn-delete" type="button" class="btn btn-danger">Удалить</button>
+                <button id ="btn-warning" type="button" class="btn btn-warning">Удалить с предупреждением</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- App js -->
+<script src="assets/js/app.min.js"></script>
+<script src="assets/js/advertPage.js"></script>
+<script src="assets/js/modalClose.js"></script>
+</body>
+</html>
